@@ -5,6 +5,7 @@ __pycache__/
 
 
 # file
+*.log
 *.pyc
 *.pyo
 *.pyd
