@@ -1,0 +1,1 @@
+nohup /root/miniconda3/envs/malio/bin/python oneformer_segmentation_service_cache.py --host 0.0.0.0 --port 8003  > seg.log 2>&1 &

@@ -1,0 +1,36 @@
+# dir
+csv/
+images/
+output/
+__pycache__/
+
+
+
+# file
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+.DS_Store
+
+# 排除models目录里的所有文件
+models/*
+output/*
+results_seg/*
+# 保留
+!models/Depth-Anything-V2/Depth-Anything-V2-Large-hf/.gitkeep
+!models/Depth-Anything-V2/Depth-Anything-V2-Metric-Outdoor-Large-hf/.gitkeep
+!models/Depth-Anything-V2/Depth-Anything-V2-Metric-Indoor-Large-hf/.gitkeep
+!models/oneformer_ade20k_swin_large/.gitkeep
+!output/.gitkeep
+
+
+
+
+
+
+
+

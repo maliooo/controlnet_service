@@ -1,0 +1,103 @@
+[2025-06-23 09:18:06,913] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/root/miniconda3/envs/malio/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:49: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/root/miniconda3/envs/malio/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:67: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.4
+[93m [WARNING] [0m using untested triton version (3.0.0), only 1.0.0 is known to be compatible
+使用设备: cuda
+/root/miniconda3/envs/malio/lib/python3.10/site-packages/transformers/utils/deprecation.py:172: UserWarning: The following named arguments are not valid for `OneFormerImageProcessor.__init__` and were ignored: '_max_size'
+  return func(*args, **kwargs)
+df.columns: Index(['Idx', 'Ratio', 'Train', 'Val', 'Stuff', 'Color_Code 
+(R,G,B)',
+       'Color_Code(hex)', 'Color', 'Name'],
+      dtype='object')
+启动服务于 http://0.0.0.0:8003
+INFO:     Started server process [87971]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8003 (Press CTRL+C to quit)
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+/home/zhangxuqi/malio/code/controlnet_service/oneformer_segmentation_service_cache.py:427: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  params = request_data.dict()
+/root/miniconda3/envs/malio/lib/python3.10/site-packages/torch/functional.py:513: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3609.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+模型seg推理时间为: 0.68s
+将分割结果转换为numpy数组时间为: 0.00s
+创建ADE20K的metadata时间为: 0.00s
+创建可视化器时间为: 0.02s
+绘制语义分割结果时间为: 0.18s
+可视化时间为: 0.32s
+转换为base64时间为: 0.06s
+结果已存入缓存
+服务处理时间为: 1.19s
+INFO:     172.18.0.1:40360 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+模型seg推理时间为: 0.11s
+将分割结果转换为numpy数组时间为: 0.00s
+创建ADE20K的metadata时间为: 0.00s
+创建可视化器时间为: 0.02s
+绘制语义分割结果时间为: 0.20s
+可视化时间为: 0.43s
+转换为base64时间为: 0.09s
+结果已存入缓存
+服务处理时间为: 0.75s
+INFO:     172.18.0.1:40616 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, True
+模型seg推理时间为: 0.09s
+将分割结果转换为numpy数组时间为: 0.00s
+创建ADE20K的metadata时间为: 0.00s
+创建可视化器时间为: 0.02s
+绘制语义分割结果时间为: 0.27s
+可视化时间为: 0.53s
+转换为base64时间为: 0.07s
+服务处理时间为: 0.83s
+INFO:     172.18.0.1:40686 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+从缓存中获取结果
+INFO:     172.18.0.1:40702 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+从缓存中获取结果
+INFO:     172.18.0.1:44862 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+从缓存中获取结果
+INFO:     172.18.0.1:47278 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+从缓存中获取结果
+INFO:     172.18.0.1:47524 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+模型seg推理时间为: 0.09s
+将分割结果转换为numpy数组时间为: 0.00s
+创建ADE20K的metadata时间为: 0.00s
+创建可视化器时间为: 0.02s
+绘制语义分割结果时间为: 0.23s
+可视化时间为: 0.40s
+转换为base64时间为: 0.03s
+结果已存入缓存
+服务处理时间为: 0.61s
+INFO:     172.18.0.1:47540 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+模型seg推理时间为: 0.08s
+将分割结果转换为numpy数组时间为: 0.00s
+创建ADE20K的metadata时间为: 0.00s
+创建可视化器时间为: 0.01s
+绘制语义分割结果时间为: 0.11s
+可视化时间为: 0.20s
+转换为base64时间为: 0.01s
+结果已存入缓存
+服务处理时间为: 0.37s
+INFO:     172.18.0.1:48356 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+从缓存中获取结果
+INFO:     172.18.0.1:48390 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+从缓存中获取结果
+INFO:     172.18.0.1:48418 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+调用函数 segment_image_base64, 请求参数为: 512, 1.0, False
+从缓存中获取结果
+INFO:     172.18.0.1:51850 - "POST /segment_image_base64 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [87971]

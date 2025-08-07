@@ -1,0 +1,13 @@
+transformers
+pillow
+numpy<2.0.0
+pandas
+matplotlib
+opencv-python
+requests
+torch<2.5.0
+fastapi
+uvicorn
+rich
+python-multipart
+scipy
