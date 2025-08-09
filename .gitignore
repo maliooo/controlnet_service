@@ -19,12 +19,14 @@ __pycache__/
 models/*
 output/*
 results_seg/*
+results_depth/*
 # 保留
 !models/Depth-Anything-V2/Depth-Anything-V2-Large-hf/.gitkeep
 !models/Depth-Anything-V2/Depth-Anything-V2-Metric-Outdoor-Large-hf/.gitkeep
 !models/Depth-Anything-V2/Depth-Anything-V2-Metric-Indoor-Large-hf/.gitkeep
 !models/oneformer_ade20k_swin_large/.gitkeep
 !output/.gitkeep
+!results_depth/.gitkeep
 
 
 

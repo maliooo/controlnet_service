@@ -15,7 +15,7 @@ def parse_args():
                         help="分割图叠加透明度")
     parser.add_argument("--show_text", action="store_true",
                         help="是否在分割图上显示文字")
-    parser.add_argument("--server_url", type=str, default="http://localhost:8003",
+    parser.add_argument("--server_url", type=str, default="http://localhost:28002",
                       help="服务器地址")
     parser.add_argument("--num_requests", type=int, default=20,
                       help="请求次数")
@@ -117,7 +117,7 @@ def main():
     # 根据请求类型选择图片路径或URL
     if args.request_type in ["file", "base64"]:
         if args.image_path is None:
-            args.image_path = "/home/zhangxuqi/malio/code/controlnet_service/images/bedroom.jpg"
+            args.image_path = "./images/bedroom.jpg"
         if not os.path.exists(args.image_path):
             raise FileNotFoundError(f"图片文件不存在: {args.image_path}")
     elif args.request_type == "url":
