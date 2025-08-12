@@ -1,1 +1,2 @@
+export HF_ENDPOINT=https://hf-mirror.com
 nohup /home/maliooo/miniconda3/envs/controlnet/bin/python oneformer_segmentation_service_cache.py --host 0.0.0.0 --port 28002  > seg.log 2>&1 &

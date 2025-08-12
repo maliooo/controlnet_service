@@ -10,3 +10,5 @@ uvicorn
 rich
 python-multipart
 scipy
+einops
+timm
